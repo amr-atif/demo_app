@@ -27,8 +27,6 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-#make errors better
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -51,6 +49,12 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+
+#A modern CSS framework based on Flexbox
+gem 'bulma-rails', '~> 0.9.2'
+#Forms made easy!
+gem 'simple_form'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -62,9 +66,18 @@ group :development do
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
+  #make errors better
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  #Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.18'
+
+  #Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2',require: false
+
+
 end
 
 group :test do

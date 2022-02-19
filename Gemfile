@@ -48,7 +48,8 @@ gem "bootsnap", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-
+#mysql2
+gem 'mysql2', '~> 0.5.3'
 
 #A modern CSS framework based on Flexbox
 gem 'bulma-rails', '~> 0.9.2'
